@@ -128,7 +128,12 @@ model = load_model("UNet_chitraranga_model.keras")
 
 ## 🖼 Example (Before / After)
 
-(Add your images here)
+*Before
+<img width="686" height="386" alt="image" src="https://github.com/user-attachments/assets/4a8fdc21-0d31-43f9-aad2-fc1411bef22e" />
+
+*After
+<img width="686" height="386" alt="image" src="https://github.com/user-attachments/assets/9a88c38d-e65e-4198-adca-2c1583875317" />
+
 
 ```
 before/gray.png → after/colorized.png
@@ -141,9 +146,7 @@ before/gray.png → after/colorized.png
 You can use any dataset for training:
 
 * CIFAR-10 (resized to 128×128)
-* ImageNet subset
-* CelebA (faces)
-* Custom photography dataset
+
 
 Each image is converted:
 
@@ -151,5 +154,10 @@ Each image is converted:
 RGB → grayscale (input)
 RGB → original (target)
 ```
+
+##Images
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1cc8f011-04b4-48e1-8f64-761bf1ab1f0b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3402454f-0b60-4ba5-977c-e9f01934884c" />
+
 
 ---
