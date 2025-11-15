@@ -1,0 +1,36 @@
+{% extends 'Base.html' %}
+
+{% block body %}
+
+<div class="about-wrapper">
+
+    <div class="about-text">
+        <h1 class="about-title">About <span class="highlight">Chitraranga</span></h1>
+
+        <p class="about-subtext">
+            Chitraranga is an intelligent image colorization platform built using
+            <span class="highlight">Deep Learning</span> and a powerful 
+            <span class="highlight">U-Net architecture</span>.
+            It takes grayscale images and brings them to life with realistic colors.
+        </p>
+
+        <p class="about-subtext">
+            The model is trained using TensorFlow and deployed through a 
+            <span class="highlight">Flask</span> web application that allows you to upload,
+            process, and download colorized images instantly.
+        </p>
+
+        <p class="about-subtext">
+            Our mission is to combine art and technology — helping photographers, artists,
+            historians, and enthusiasts visualize the past in vibrant color.
+        </p>
+    </div>
+
+    <!-- <div class="about-image-container">
+        <img src="{{ url_for('static', filename='css/about-preview.png') }}"
+             alt="About Chitraranga" class="about-image">
+    </div> -->
+
+</div>
+
+{% endblock body %}

@@ -1,0 +1,36 @@
+{% extends 'Base.html' %}
+
+{% block body %}
+<main class="main-content">
+    <section class="upload-section">
+        
+        <form action="/" method="POST" enctype="multipart/form-data">
+
+            <label for="image-upload" class="upload-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6zm5-9h-2l3-3 3 3h-2v4h-2v-4z"/>
+                </svg>
+                Upload Image
+            </label>
+            
+            <input type="file" id="image-upload" name="image-upload" accept="image/*">
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+    </section>
+
+
+
+
+        <section class="image-showcase">
+            <img src="{{ url_for('static', filename='css/mirror-neon-right.png') }}" alt="Neon Mirror" class="mirror">
+            
+            <img src="{{ url_for('static', filename='css/dancer-neon-half.png') }}" alt="Bharatanatyam Dancer" class="dancer">
+        </section>
+
+    </main>
+
+
+{% endblock body %}

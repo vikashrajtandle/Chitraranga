@@ -1,0 +1,12 @@
+{% extends 'Base.html' %}
+
+{% block body %}
+<div class="result_container">
+    <div class="result_image">
+        {% if result %}
+        <img src="{{ url_for('static', filename='result.png') }}" alt="Colorized Image">
+        {% endif %}
+    </div>
+</div>
+
+{% endblock body %}
